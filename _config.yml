@@ -2,12 +2,13 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://pbking1.github.io
-title: My Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
-simple_search: https://www.google.com/search
-description:
+url: http://pbking1.github.com
+title: KING
+subtitle: Do more, say less
+author: pb
+simple_search: http://www.google.com.hk/search
+description: king, KING, King, c/c++, robot, android, octopress, java, python, ruby, web, sae, cloud, ios, http, tcp, ip
+keywords: king, KING, King, c/c++, robot, android, octopress, java, python, ruby, web, sae, cloud, ios, http, tcp, ip
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -41,16 +42,16 @@ rdiscount:
     - smart
 pygments: false # default python pygments have been replaced by pygments.rb
 
-paginate: 10          # Posts per page on the blog index
+paginate: 6          # Posts per page on the blog index
 pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
-excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
-
+#excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+excerpt_link: "Read more"
 titlecase: true       # Converts page and post titles to titlecase
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
-default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
+default_asides: [asides/recent_posts.html ,asides/category_list.html, asides/comment.html, asides/category_cloud.html, asides/github.html, custom/asides/earth.html]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
@@ -63,38 +64,38 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user:
-github_repo_count: 0
+github_user: pbking1
+github_repo_count: 5
 github_show_profile_link: true
 github_skip_forks: true
 
-# Twitter
-twitter_user:
-twitter_tweet_button: true
 
-# Google +1
-google_plus_one: false
-google_plus_one_size: medium
+# Sina Weibo
+sina_weibo_follow_button: true
 
-# Google Plus Profile
-# Hidden: No visible button, just add author information to search results
-googleplus_user:
-googleplus_hidden: false
+#comment and share                                                                                    
+comment_and_share: true
 
-# Pinboard
-pinboard_user:
-pinboard_count: 3
+#share
+share: true
 
-# Delicious
-delicious_user:
-delicious_count: 3
+#Jiathis
+jiathis: true
 
-# Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+# duoshuo
+duoshuo: false
+duoshuo_comments: true
+duoshuo_short_name: pbking1
+duoshuo_asides_num: 5
+duoshuo_asides_avatars: 1
+duoshuo_asides_time: 1
+duoshuo_asides_title: 1
+duoshuo_asides_admin: 0
+duoshuo_asides_length: 20
 
-# Google Analytics
-google_analytics_tracking_id:
+#disqus
+disqus_short_name: pbking1
+disqus_show_comment_count: true
 
-# Facebook Like
-facebook_like: false
+# Post License
+post_license: true
